@@ -1,4 +1,7 @@
-# psadmin.io Showoff Template
+# Peek-a-Boo...I CPU 
+
+## Using DPKs for CPU Patching
+Learn the 5 Ws to Critical Patch Updates (CPUs) and How to apply them using Deployment Packages (DPKs).
 
 View the branches to find the various versions of this talk. Each conference talk will have a separate branch.
 
