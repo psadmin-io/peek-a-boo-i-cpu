@@ -63,21 +63,59 @@
 
 !SLIDE bullets
 
-# DPK Overview
+# Custom Archives - Package
 
-* 
+    @@@bash
+    # package
+    TUX_HOME=/opt/oracle/psft/pt/tux
+    TUX_VERSION=12.2.2.0.0.rp30
+    TUX_ARCHIVE_DIR=/opt/io/archives/tux
+    
+    tar -zcf "${TUX_ARCHIVE_DIR?}/pt-tuxedo${TUX_VERSION?}.tgz" \
+        -C "${TUX_HOME?}" .
 
 !SLIDE bullets
 
-# DPK Overview
+# Custom Archives - Package
 
-* 
+    @@@bash
+    $ tree -L 2 /opt/io/archives/
+    /opt/io/archives/
+    ├── jdk
+    │   ├── pt-jdk1.8.0_144.tgz
+    │   └── pt-jdk1.8.0_171.tgz
+    ├── pt
+    │   ├── pt-pshome8.56.07.tgz
+    │   └── pt-pshome8.56.09.tgz
+    ├── tux
+    │   ├── pt-tuxedo12.2.2.0.0.rp26.tgz
+    │   └── pt-tuxedo12.2.2.0.0.rp30tgz
+    └── wls
+        ├── pt-weblogic12.2.1.20180117.tgz
+        └── pt-weblogic12.2.1.20180417.tgz    
 
 !SLIDE bullets
 
-# DPK Overview
+# Custom Archives - Cleanup
 
-* 
+    @@@bash
+    # cleanup
+    sudo rm -rf /opt/oracle/psft/pt/tux
+    sudo rm -rf /opt/oracle/psft/cfg/appserv
+    sudo rm -rf /opt/oracle/psft/db/oraInventory
+    sudo rm /opt/oracle/psft/dpk/archives/pt-tuxedo*
+
+!SLIDE bullets
+
+# Custom Archives - Add New Archive
+
+    @@@bash
+    # link
+    TUX_VERSION=12.2.2.0.0.rp30
+    TUX_ARCHIVE_DIR=/opt/io/archives/tux
+    DPK_ARCHIVE_DIR=/opt/oracle/psft/dpk/archives
+    
+    sudo ln -s ${TUX_ARCHIVE_DIR?}/pt-tuxedo${TUX_VERSION?}.tgz ${DPK_ARCHIVE_DIR?}
 
 !SLIDE bullets
 
