@@ -115,7 +115,21 @@
     TUX_ARCHIVE_DIR=/opt/io/archives/tux
     DPK_ARCHIVE_DIR=/opt/oracle/psft/dpk/archives
     
-    sudo ln -s ${TUX_ARCHIVE_DIR?}/pt-tuxedo${TUX_VERSION?}.tgz ${DPK_ARCHIVE_DIR?}
+    ln -s ${TUX_ARCHIVE_DIR?}/pt-tuxedo${TUX_VERSION?}.tgz ${DPK_ARCHIVE_DIR?}
+
+!SLIDE bullets
+
+# Custom Archives - Add New Archive
+
+    @@@bash
+    $ tree $PSFT_BASE_DIR/dpk/archives/
+    /opt/oracle/psft/dpk/archives/
+    ├── ...
+    ├── pt-jdk1.8.0_144.tgz -> /opt/io/archives/pt/pt-pshome8.56.07.tgz
+    ├── pt-pshome8.56.07.tgz -> /opt/io/archives/pt/pt-pshome8.56.07.tgz
+    ├── pt-tuxedo12.2.2.0.0.rp30.tgz -> /opt/io/archives/tux/pt-tuxedo12.2.2.0.0.rp30.tgz
+    ├── pt-weblogic12.2.1.tgz -> /opt/io/archives/wls/pt-weblogic12.2.1.20180417.tgz
+    └── ...    
 
 !SLIDE bullets
 
