@@ -131,17 +131,24 @@
     ├── pt-weblogic12.2.1.tgz -> /opt/io/archives/wls/pt-weblogic12.2.1.20180417.tgz
     └── ...    
 
-!SLIDE bullets
+!SLIDE title center
 
-# DPK Overview
-
-* 
+# DEMO
 
 !SLIDE bullets
 
-# DPK Overview
+# Custom DPK - Custom Archives
 
-* 
+Create a new hash to identify Archives we want to deploy
+
+    @@@yaml
+    archive_files:
+      weblogic: "%{hiera('archive_dir')}/pt-weblogic12.2.1.2.20180116.tgz"
+      tuxedo:   "%{hiera('archive_dir')}/pt-tuxedo12.2.2.0.tgz"
+      jdk:      "%{hiera('archive_dir')}/pt-jdk1.8.0_144.tgz"
+      pshome:   "%{hiera('archive_dir')}/pt-pshome8.56.06.tgz"
+
+[psadmin.io/blog](https://psadmin.io/2018/04/10/improve-the-management-of-dpk-archives)
 
 !SLIDE bullets
 
