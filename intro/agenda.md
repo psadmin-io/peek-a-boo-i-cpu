@@ -2,6 +2,7 @@
 
 # Agenda
 
-1. Topic
-1. Topic
-1. Topic
+1. Patching
+1. DPK
+1. DPK+Patching
+1. Conclusion

@@ -1,14 +1,19 @@
 !SLIDE bullets
 
-# About Us
+# psadmin.io
 
-psadmin.io is a community of PeopleSoft Administrators
+* blog
+* podcast
+* community
+* training
+* coaching
 
 !SLIDE bullets
 
-# Kyle Beson
+# Kyle Benson
 
-!SLIDE bullets
-
-# Dan Iverson
+* 10+ years in PeopleSoft
+* Automation/DPK
+* Life Cycle Management
+* Fluid Navigation
 
