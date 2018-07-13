@@ -1,20 +1,19 @@
 {
-  "name": "Advanced PeopleSoft Administration",
+  "name": "Peek-a-Boo...I CPU",
   "protected": [
     "presenter",
     "onepage",
     "print"
   ],
-  "user": "dan",
+  "user": "psa",
   "password": "password",
   "highlight": "railscasts",
   "sections": [
     "intro/intro.md",
     "intro/about.md",
     "intro/agenda.md",
+    "patching/patching.md",
     "dpk/dpk.md",
-    "custom_modules/custom.md",
-    "scripting/scripting.md",
-    "git/git.md"
+    "conclusion/conclusion.md"
   ]
 }
