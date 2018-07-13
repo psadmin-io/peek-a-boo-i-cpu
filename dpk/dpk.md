@@ -47,9 +47,19 @@
 
 !SLIDE bullets
 
-# DPK Overview
+# Delivered DPK - Custom Archives
 
-* 
+* Create your own, fully patches, Archives
+    1. Start with base installs
+    1. Manually patch them once
+    1. Package in tarball
+        * Use movement scripts, if needed
+    1. Replace tarball in `$PSFT_BASE_DIR/dpk/archives`
+    1. Cleanup previous install
+    1. Run `puppet apply`
+
+
+[psadmin.io/blog](https://psadmin.io/2017/05/02/apply-cpu-patches-with-deployment-packages)
 
 !SLIDE bullets
 

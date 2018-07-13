@@ -40,8 +40,7 @@
 # Patching - Why?
 
 * CVSS
-    * Common Vulnerability Scoring System
-    * https://www.first.org/cvss/
+    * [Common Vulnerability Scoring System](https://www.first.org/cvss)
 * Fixes
 
 !SLIDE bullets
