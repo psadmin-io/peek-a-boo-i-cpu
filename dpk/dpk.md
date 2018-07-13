@@ -152,31 +152,24 @@ Create a new hash to identify Archives we want to deploy
 
 !SLIDE bullets
 
-# DPK Overview
+# Custom DPK - Custom Archives
 
-* 
+Update the Puppet code to use the new hash
 
-!SLIDE bullets
+    @@@ruby
+    $ cd $PSFT_BASE_DIR/dpk/puppet/modules/pt_setup/manifests
+    $ vi tools_deployment.pp
 
-# DPK Overview
-
-* 
-
-!SLIDE bullets
-
-# DPK Overview
-
-* 
-
-!SLIDE bullets
-
-# DPK Overview
-
-* 
-
-!SLIDE bullets
-
-# DPK Overview
-
-* 
-
+    ...
+    $archive_files = hiera('archive_files', '')
+    
+    if $archive_files {
+      $weblogic_archive_file   = $archive_files[$weblogic_tag]
+    } 
+    if $weblogic_archive_file == '' {
+      $weblogic_archive_file = get_matched_file($tools_archive_location, $weblogic_tag)
+    }
+    if $weblogic_archive_file == '' {
+      fail("Unable to locate archive (tgz) file for Weblogic in ${tools_archive_location}")
+    }
+    ...
