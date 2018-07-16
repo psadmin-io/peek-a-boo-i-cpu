@@ -149,11 +149,13 @@
 Create a new hash to identify Archives we want to deploy
 
     @@@yaml
+    archive_dir: "/opt/io/archives"
+ 
     archive_files:
-      weblogic: "%{hiera('archive_dir')}/pt-weblogic12.2.1.2.20180116.tgz"
-      tuxedo:   "%{hiera('archive_dir')}/pt-tuxedo12.2.2.0.tgz"
-      jdk:      "%{hiera('archive_dir')}/pt-jdk1.8.0_144.tgz"
-      pshome:   "%{hiera('archive_dir')}/pt-pshome8.56.06.tgz"
+      weblogic: "%{hiera('archive_dir')}/wls/pt-weblogic12.2.1.2.20180116.tgz"
+      tuxedo:   "%{hiera('archive_dir')}/tux/pt-tuxedo12.2.2.0.0.rp30.tgz"
+      jdk:      "%{hiera('archive_dir')}/jdk/pt-jdk1.8.0_144.tgz"
+      pshome:   "%{hiera('archive_dir')}/pt/pt-pshome8.56.07.tgz"
 
 [psadmin.io/blog](https://psadmin.io/2018/04/10/improve-the-management-of-dpk-archives)
 
@@ -164,7 +166,7 @@ Create a new hash to identify Archives we want to deploy
 Update the Puppet code to use the new hash
 
     @@@ruby
-    $ cd $PSFT_BASE_DIR/dpk/puppet/modules/pt_setup/manifests
+    $ cd $PUPPET_HOME/production/modules/pt_setup/manifests
     $ vi tools_deployment.pp
 
     ...
