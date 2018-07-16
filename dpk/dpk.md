@@ -26,7 +26,7 @@
 
 !SLIDE bullets
 
-# Dellivered DPK - `psft_patches.yaml`
+# Delivered DPK - `psft_patches.yaml`
 
 * Linux Only
 * Uses `psft_patches.yaml` and `$FIXES_DIR`
@@ -89,7 +89,7 @@
     │   └── pt-pshome8.56.09.tgz
     ├── tux
     │   ├── pt-tuxedo12.2.2.0.0.rp26.tgz
-    │   └── pt-tuxedo12.2.2.0.0.rp30tgz
+    │   └── pt-tuxedo12.2.2.0.0.rp30.tgz
     └── wls
         ├── pt-weblogic12.2.1.20180117.tgz
         └── pt-weblogic12.2.1.20180417.tgz    
@@ -100,10 +100,10 @@
 
     @@@bash
     # cleanup
-    sudo rm -rf /opt/oracle/psft/pt/tux
-    sudo rm -rf /opt/oracle/psft/cfg/appserv
-    sudo rm -rf /opt/oracle/psft/db/oraInventory
-    sudo rm /opt/oracle/psft/dpk/archives/pt-tuxedo*
+    rm -rf /opt/oracle/psft/pt/tux
+    rm -rf /opt/oracle/psft/cfg/appserv
+    rm -rf /opt/oracle/psft/db/oraInventory
+    rm /opt/oracle/psft/dpk/archives/pt-tuxedo*
 
 !SLIDE bullets
 
@@ -125,7 +125,7 @@
     $ tree $PSFT_BASE_DIR/dpk/archives/
     /opt/oracle/psft/dpk/archives/
     ├── ...
-    ├── pt-jdk1.8.0_144.tgz -> /opt/io/archives/pt/pt-pshome8.56.07.tgz
+    ├── pt-jdk1.8.0_144.tgz -> /opt/io/archives/pt/pt-jdk1.8.0_144.tgz
     ├── pt-pshome8.56.07.tgz -> /opt/io/archives/pt/pt-pshome8.56.07.tgz
     ├── pt-tuxedo12.2.2.0.0.rp30.tgz -> /opt/io/archives/tux/pt-tuxedo12.2.2.0.0.rp30.tgz
     ├── pt-weblogic12.2.1.tgz -> /opt/io/archives/wls/pt-weblogic12.2.1.20180417.tgz
