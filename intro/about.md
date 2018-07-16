@@ -2,11 +2,11 @@
 
 # psadmin.io
 
-* blog
-* podcast
-* community
-* training
-* coaching
+* Blog
+* Podcast
+* Community
+* Training
+* Coaching
 
 !SLIDE bullets
 
