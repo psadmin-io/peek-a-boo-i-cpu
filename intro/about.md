@@ -18,4 +18,3 @@
 * Community
 * Training
 * Coaching
-

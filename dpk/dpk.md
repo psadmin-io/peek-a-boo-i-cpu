@@ -61,13 +61,15 @@
 
 [psadmin.io/blog](https://psadmin.io/2017/05/02/apply-cpu-patches-with-deployment-packages)
 
-!SLIDE title center
+!SLIDE subsection center grey
 
-# DEMO
+# Demo
 
 !SLIDE bullets
 
 # Custom Archives - Package
+
+Patch a current Tuxedo installation, then package up in tarball.
 
     @@@bash
     # package
@@ -121,13 +123,6 @@
     
     ln -s ${TUX_ARCHIVE_DIR?}/pt-tuxedo${TUX_VERSION?}.tgz ${DPK_ARCHIVE_DIR?}
 
-!SLIDE bulltes
-
-# Custom Archives - Apply
-
-* `cd ${PUPPET_HOME}/production/manifests`
-* `sudo puppet apply site.pp --confdir=${PUPPET_HOME}`
-
 !SLIDE bullets
 
 # Custom Archives - Add New Archive
@@ -141,6 +136,14 @@
     ├── pt-tuxedo12.2.2.0.0.rp30.tgz -> /opt/io/archives/tux/pt-tuxedo12.2.2.0.0.rp30.tgz
     ├── pt-weblogic12.2.1.tgz -> /opt/io/archives/wls/pt-weblogic12.2.1.20180417.tgz
     └── ...    
+
+!SLIDE bulltes
+
+# Custom Archives - Apply
+
+    @@@bash
+    $ cd ${PUPPET_HOME}/production/manifests
+    $ sudo puppet apply site.pp --confdir=${PUPPET_HOME}
 
 !SLIDE bullets
 
@@ -167,7 +170,7 @@ Update the Puppet code to use the new hash
 
     @@@ruby
     $ cd $PUPPET_HOME/production/modules/pt_setup/manifests
-    $ vi tools_deployment.pp
+    $ vi pt_tools_deployment.pp
 
     ...
     $archive_files = hiera('archive_files', '')
