@@ -170,7 +170,7 @@ Update the Puppet code to use the new hash
 
     @@@ruby
     $ cd $PUPPET_HOME/production/modules/pt_setup/manifests
-    $ vi pt_tools_deployment.pp
+    $ vi tools_deployment.pp
 
     ...
     $archive_files = hiera('archive_files', '')
