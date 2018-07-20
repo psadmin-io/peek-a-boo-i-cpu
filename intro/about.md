@@ -1,15 +1,5 @@
 !SLIDE bullets
 
-# psadmin.io
-
-* blog
-* podcast
-* community
-* training
-* coaching
-
-!SLIDE bullets
-
 # Kyle Benson
 
 * PeopleSoft Administrator 
@@ -19,3 +9,12 @@
 * Oracle ACE
 * 10+ years in PeopleSoft
 
+!SLIDE bullets
+
+# psadmin.io
+
+* Blog
+* Podcast
+* Community
+* Training
+* Coaching
