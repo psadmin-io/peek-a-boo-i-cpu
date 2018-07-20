@@ -34,11 +34,13 @@
     * April
     * July
     * October
+* Security Alerts AdHoc
 
 !SLIDE bullets
 
 # Patching - Why?
 
+* [Oracle CPU, Security Alerts](https://www.oracle.com/technetwork/topics/security/alerts-086861.html)
 * CVSS
     * [Common Vulnerability Scoring System](https://www.first.org/cvss)
 * Fixes
